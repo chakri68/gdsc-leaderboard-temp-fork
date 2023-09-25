@@ -1,0 +1,26 @@
+{
+  "name": "gdsc-iiitl-leaderboard-temp-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Temporary leaderboard backend for GDSC IIITL",
+  "main": "src/server.js",
+  "repository": "https://github.com/DSC-IIITL/leaderboard-temp-backend",
+  "author": "chakri68 <chakridevireddy69@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "lint:check": "prettier --check .",
+    "lint": "prettier --write ."
+  },
+  "dependencies": {
+    "@fastify/env": "^4.2.0",
+    "fastify": "^4.23.2",
+    "googleapis": "^126.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
