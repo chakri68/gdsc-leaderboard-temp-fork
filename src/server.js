@@ -26,7 +26,7 @@ const options = {
 
 const fastify = Fastify({ logger: true });
 
-fastify.get("/", async (request, reply) => {
+fastify.post("/get-leaderboard", async (request, reply) => {
   const data = await getSheetsData();
   reply.send({ hello: "world", sheetsData: data });
 });
